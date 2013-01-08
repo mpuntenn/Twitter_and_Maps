@@ -1,0 +1,18 @@
+http://mobile.tutsplus.com/tutorials/phonegap/phonegap-from-scratch-device-apis/
+
+Storage APIs
+It’s possible that we might want to store the photo taken somewhere other than the photo album on the device. In fact, this is highly likely to be the case. We will probably also want to store other information. There are a few ways to go about this to use the device storage, one of them is to use WebSQL, the other is using WebStorage – both as defined by the W3C. You could also send the data to a remote server if you wanted to serve it in a cloud app (Instagr.am), or you could go a step further and use Lawnchair or PersistenceJS
+.
+I personally prefer the WebStorage method and for this project it’s perfect.
+We can make use of WebStorage with the following syntax:
+
+
+1	 //Store the data
+2	 window.localStorage.setItem("key", "value");
+3	 //retrieve the data
+4	 var value = window.localStorage.getItem("key");
+5	 // value is now equal to "value"
+6	 // remove the value
+7	 window.localStorage.removeItem("key");
+
+With this basic syntax, we have the ability to store the base64 encoded image in local storage and retrieve it when we need to.

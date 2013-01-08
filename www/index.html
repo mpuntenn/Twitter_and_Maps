@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>mobiletuts phonegap</title>
+  	<script src="phonegap-2.2.0.js"></script>
+  	<script>
+    	 function onLoad(){
+    	      document.addEventListener("deviceready", onDeviceReady, true);
+     	}
+     	function onDeviceReady(){
+     	     navigator.notification.alert("PhoneGap is working!!");
+     	}
+  	</script>
+  	</head>
+  	<body onload="onLoad();">
+       <h1>Welcome to PhoneGap</h1>
+       <h2>Edit assets/www/index.html</h2>
+       <a href="file:///android_asset/www/acceleration.html"> Acceleration </a>
+       <br/>
+       <a href="file:///android_asset/www/camera.html"> Camera </a>
+       <br/>
+       <a href="file:///android_asset/www/geolocation.html"> Geolocation </a>
+       <br/>
+       <a href="file:///android_asset/www/main.html"> Main </a>
+       <br/>
+  	</body>
+</html>

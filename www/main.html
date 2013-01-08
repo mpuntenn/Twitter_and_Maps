@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="test/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/iscroll-lite.js"></script>
+<script src="js/app.js"></script>
+
+<script src="app.js"></script>
+
+  <title>Sculder</title>
+</head>
+<body>
+
+	<header>
+	    <h1>Sculder</h1>
+	</header>
+	<div id="wrapper">
+    	<div id="main-content">
+    
+    		<div id="pages">
+    			<div id="map" class="current">
+   		 		</div>
+    			<div id="camera">
+    			</div>
+    			<div id="twitter" class="current">
+   					<ul id="tweets">
+    				</ul>
+    				<script id="tmpl-tweets" type="text/x-jquery-tmpl">
+    				    <li>
+        				    <a class="avatar" href="#"><img src="${profile_image_url}" alt="${from_user}"></a>
+        				    <a href="http://twitter.com/${from_user}"><h2>${from_user}</h2></a>
+            				<span class="details">${text} </span>
+       			 		</li>
+    				</script>
+				</div>
+			</div>
+    
+    	</div>
+	</div>
+	<footer>
+	
+		<ul id="tab-bar">
+    		<li>
+        		<a href="#map">Map</a>
+   			 </li>
+    		<li>
+        		<a href="#camera">Camera</a>
+    		</li>
+    		<li>
+        		<a href="#twitter">Twitter</a>
+    		</li>
+		</ul>
+	
+	</footer>
+
+</body>
+</html>
